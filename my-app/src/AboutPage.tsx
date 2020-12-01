@@ -26,7 +26,7 @@ export default class ProjectPage extends React.Component<
       <div className="ContentHolder scrollSnap">
         <div className="Content limit Center">
           <div className="ContentTitle">My Story</div>
-          <div className="ContentDesc">
+          <div className="ContentDesc text-center">
             <button
               onClick={() => this.props.scrollToNode(this.educationRef.current)}
             >
@@ -51,11 +51,13 @@ export default class ProjectPage extends React.Component<
               MY HOBBIES
             </button>
           </div>
-          <div className="ContentFooter">Scroll to see more...</div>
+          <div className="ContentFooter  text-center">
+            Scroll to see more...
+          </div>
         </div>
         <div className="Content limit" ref={this.educationRef}>
           <div className="ContentTitle sub">Education</div>
-          <div className="ContentDesc container">
+          <div className="ContentDesc  text-center container">
             <div className="CDtext">
               I am a British Tamil born in london and went to schools in
               Battersea and Mitcham before going to Tiffin School for my higher

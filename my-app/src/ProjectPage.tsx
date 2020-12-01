@@ -68,6 +68,7 @@ export default class ProjectPage extends React.Component<
               onClick={() => {
                 this.selectProject(index);
               }}
+              key={"Project" + index}
             >
               <img className="CTimage" src={project.image}></img>
               <div className="CTdesc">
@@ -75,7 +76,11 @@ export default class ProjectPage extends React.Component<
                 <div className="CTtags">
                   <ul>
                     {project.tags.map((tag, tagIndex) => {
-                      return <li>{tag}</li>;
+                      return (
+                        <li key={"project" + index + "tag" + tagIndex}>
+                          {tag}
+                        </li>
+                      );
                     })}
                   </ul>
                 </div>
@@ -182,12 +187,12 @@ export default class ProjectPage extends React.Component<
       </>
     );
   }
-  private displayProjectPage() {
-    if (this.props.page === Pages.SpecifiedProject) {
-      return this.displayProject();
-    } else return this.displayTiles();
-  }
+
   render() {
-    return <div className="ContentHolder">{this.displayProjectPage()}</div>;
+    if (this.props.page === Pages.SpecifiedProject) {
+      return (
+        <div className="ContentHolder Project"> {this.displayProject()}</div>
+      );
+    } else return <div className="ContentHolder"> {this.displayTiles()}</div>;
   }
 }

@@ -1,0 +1,36 @@
+.form-inputs {
+  display: flex;
+  flex-wrap: wrap;
+}
+.form-left {
+  flex-basis: 50%;
+}
+.form-right {
+  flex-basis: 50%;
+}
+.form-control {
+  font: inherit;
+  width: 80%;
+  padding: 1vw;
+  margin: 1vh 10% 1vh 0;
+  resize: none;
+  min-height: 50%;
+}
+
+.form-button {
+  text-align: center;
+  margin-right: 5%;
+  font-size: 0.9em;
+  margin-top: 5%;
+}
+@media (orientation: portrait) and (max-width: 900px) {
+  .form-left {
+    flex-basis: 100%;
+  }
+  .form-right {
+    flex-basis: 100%;
+  }
+  .form-control {
+    margin: 1vh 5%;
+  }
+}

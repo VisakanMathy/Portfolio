@@ -1,4 +1,7 @@
 @import "~react-image-gallery/styles/css/image-gallery.css";
+.ContentHolder.Project {
+  flex-basis: inherit;
+}
 
 .ProjectContent {
   font-family: "Lora", serif;

@@ -1,6 +1,7 @@
 import React, { FormEvent } from "react";
 import { Pages } from "./App";
 import Form from "./Form";
+import "./ContentPage.css";
 
 interface ContactPageProps {
   page: Pages;
@@ -18,9 +19,15 @@ export default class ContentPage extends React.Component<
 
   render() {
     return (
-      <div>
-        <div className="ContentHolder scrollSnap">
-          <div className="Content limit Center">
+      <div className="ContentHolder">
+        <div className="Content limit">
+          <div className="ContentTitle Contact left-10-5">Send a message</div>
+          <div className="ContentDesc">
+            <div className="left-10-5">
+              Email: visakanmathivannan@gmail.com
+              <br></br>
+              Tel: +44 7910759854
+            </div>
             <Form />
           </div>
         </div>

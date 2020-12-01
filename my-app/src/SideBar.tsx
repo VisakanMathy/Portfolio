@@ -25,14 +25,14 @@ export default class SideBar extends React.Component<
     let summary = [];
     summary = Content.Pages[this.props.page].summary.map((text, index) => {
       if (index === 0) {
-        return <>{text}</>;
+        return <React.Fragment key={"sidebar" + index}>{text}</React.Fragment>;
       } else {
         return (
-          <>
+          <React.Fragment key={"sidebar" + index}>
             <br />
             <br />
             {text}
-          </>
+          </React.Fragment>
         );
       }
     });

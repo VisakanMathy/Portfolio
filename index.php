@@ -14,7 +14,7 @@ if ($_POST)
 	// set response code - 200 OK
 
 	http_response_code(200);
-	$subject = $_POST['name'];
+	$subject = $_POST['subject']. " from " . $_POST['name'];
 	$to = "visakanmathivannan@gmail.com";
 	$from = $_POST['email'];
 

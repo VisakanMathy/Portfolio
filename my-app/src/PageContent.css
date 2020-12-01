@@ -1,6 +1,3 @@
-.Content.Center {
-  padding-top: 20vh;
-}
 .container {
   display: flex;
   align-items: center;
@@ -52,4 +49,7 @@
 }
 .CTdesc {
   padding: 5%;
+}
+.Content.limit.Center {
+  padding-top: 20vh;
 }
