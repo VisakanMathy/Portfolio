@@ -53,7 +53,7 @@ export default class Form extends React.Component<FormProps, FormState> {
   }
   handleSubmit(e: FormEvent) {
     e.preventDefault();
-    const API_PATH = "http://localhost/Portfolio/index.php";
+    const API_PATH = "https://salty-dawn-06653.herokuapp.com/";
     axios({
       method: "post",
       url: API_PATH,
