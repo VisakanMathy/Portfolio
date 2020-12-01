@@ -1,8 +1,8 @@
 <?php
-header("Access-Control-Allow-Origin: *", );
+header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Headers: Content-Type");
-if (headers_sent()){echo"here";}
-phpinfo();
+header('Content-Type: application/json');
+
 $rest_json = file_get_contents("php://input");
 $_POST = json_decode($rest_json, true);
 
@@ -26,21 +26,19 @@ if ($_POST)
 
 	$headers = "MIME-Version: 1.0\r\n";
 	$headers.= "Content-type: text/html; charset=UTF-8\r\n";
-	$headers.= "From: <' . $from . '>";
+	$headers.= "From: $from ";
 	mail($to, $subject, $msg, $headers);
 
 	// echo json_encode( $_POST );
-
-	echojson_encode(array(
-		"sent" => true
-	));
+	$data = ["sent" => true];
+	echo json_encode($data);
 	}
   else
 	{
 
 	// tell the user about error
 
-	echojson_encode(["sent" => false, "message" => "Something went wrong"]);
+	echo json_encode(["sent" => false, "message" => "Something went wrong"]);
 	}
 
 ?>

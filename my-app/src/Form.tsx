@@ -40,12 +40,12 @@ export default class Form extends React.Component<FormProps, FormState> {
     const API_PATH = "http://localhost/Portfolio/index.php";
     axios({
       method: "post",
-      url: `${API_PATH}`,
+      url: API_PATH,
       headers: { "content-type": "application/json" },
       data: this.state,
     })
       .then((result) => {
-        console.log(result.data);
+        console.log(result);
         this.setState({
           mailSent: result.data.sent,
         });

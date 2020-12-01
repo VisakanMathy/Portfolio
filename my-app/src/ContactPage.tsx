@@ -19,7 +19,11 @@ export default class ContentPage extends React.Component<
   render() {
     return (
       <div>
-        <Form />
+        <div className="ContentHolder scrollSnap">
+          <div className="Content limit Center">
+            <Form />
+          </div>
+        </div>
       </div>
     );
   }
