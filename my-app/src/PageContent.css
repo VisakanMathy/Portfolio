@@ -1,0 +1,55 @@
+.Content.Center {
+  padding-top: 20vh;
+}
+.container {
+  display: flex;
+  align-items: center;
+  min-height: 45vh;
+}
+.CDtext {
+  width: 50%;
+  text-align: justify;
+}
+.CDimage {
+  width: 50%;
+  text-align: center;
+}
+
+.ContentTitle.sub:after {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 3px;
+  background-color: black;
+  margin: 0.8vh 45% 0;
+}
+.CDimage > img {
+  width: 70%;
+  margin: 0 15%;
+}
+.Content.limit {
+  padding-top: 6vh;
+  height: 94vh;
+  display: inherit;
+}
+
+.CTimage {
+  width: 100%;
+}
+
+.ContentTile {
+  flex-basis: 48%;
+
+  margin: 1%;
+  background-color: #ececec;
+  box-sizing: border-box;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: left;
+}
+.CTtitle {
+  font-size: 1.5em;
+}
+.CTdesc {
+  padding: 5%;
+}

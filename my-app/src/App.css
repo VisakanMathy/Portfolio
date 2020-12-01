@@ -1,0 +1,152 @@
+.Header {
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+  text-align: right;
+}
+.logo {
+  position: absolute;
+  top: 20%;
+  height: 60%;
+  left: 50%;
+  font-size: 2.5em;
+  transform: translateX(-50%);
+}
+.Body {
+  background-color: #ececec;
+  background-image: url("/src/assets/paper.jpg");
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+.SideBar {
+  height: 100vh;
+  flex: 30%;
+  background-color: #f78888;
+  text-align: center;
+  animation: leftRight 0.2s ease-in;
+}
+.SideContent {
+  padding: 24vh 10%;
+}
+.SideTitle {
+}
+.SideText {
+  padding: 5vh 0%;
+  font-size: 1.25em;
+}
+.SideFooter {
+}
+.scrollSnap {
+  scroll-snap-type: y mandatory;
+}
+.ContentHolder {
+  margin-top: 6vh;
+  height: 94vh;
+  overflow-y: scroll;
+  flex: 70%;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.Content {
+  scroll-snap-align: start;
+  padding: 0 6vh;
+  box-sizing: border-box;
+  font-family: "Lora", serif;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+button {
+  background-color: transparent;
+  padding: 0.75em 1.75em;
+  font-family: "Nunito", sans-serif;
+  border-color: black;
+  font-size: 1.15em;
+  border-width: 2.5px;
+  cursor: pointer;
+  margin: 0.25em;
+}
+.ContentTitle {
+  text-align: center;
+  font-size: 3em;
+  margin-top: 5vh;
+}
+.ContentDesc {
+  margin-top: 5vh;
+}
+.ContentFooter {
+  margin-top: 10vh;
+}
+.ContentHolder::-webkit-scrollbar {
+  display: none;
+}
+@keyframes leftRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+#About {
+  background: rgba(144, 204, 244);
+}
+#Projects {
+  background: rgba(252, 136, 136);
+}
+#Contact {
+  background: rgba(243, 210, 80);
+}
+:focus {
+  outline: none;
+}
+
+@media (orientation: landscape) and (max-width: 900px) {
+  .Body {
+    font-size: 0.7rem;
+  }
+}
+@media (orientation: portrait) and (max-width: 900px) {
+  .ContentHolder {
+    overflow-y: unset;
+    height: 100vh;
+    flex: 100%;
+  }
+  .SideBar {
+    flex: 100%;
+  }
+  .Body {
+    overflow-y: scroll;
+  }
+}
+ul {
+  padding: 0;
+}
+ul > li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0 0.5em;
+  margin-right: 0.6em;
+  margin-bottom: 0.4em;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+.Row {
+  background-color: #ececec;
+  margin-bottom: 3em;
+}
+.flex-50 {
+  flex-basis: 50%;
+}
+.flex-25 {
+  flex-basis: 25%;
+}
+.flex-75 {
+  flex-basis: 75%;
+}
