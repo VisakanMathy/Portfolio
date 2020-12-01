@@ -1,8 +1,8 @@
 import React from "react";
-import logo from "./assets/Logo.png";
-import { Pages } from "./App";
-import "./NavBar.css";
-import BArrow from "./assets/home.png";
+import logo from "../assets/Logo.png";
+import { Pages } from "../App";
+import "../css/NavBar.css";
+import BArrow from "../assets/home.png";
 import HamburgerMenu from "react-hamburger-menu";
 
 interface NavBarProps {

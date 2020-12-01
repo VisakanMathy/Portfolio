@@ -1,7 +1,7 @@
 import React, { FormEvent } from "react";
-import { Pages } from "./App";
-import Form from "./Form";
-import "./ContentPage.css";
+import { Pages } from "../App";
+import Form from "../components/Form";
+import "../css/ContentPage.css";
 
 interface ContactPageProps {
   page: Pages;

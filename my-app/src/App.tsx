@@ -1,9 +1,9 @@
 import React from "react";
-import "./App.css";
-import NavBar from "./NavBar";
-import SideBar from "./SideBar";
-import PageContent from "./PageContent";
-import HomeContent from "./HomeContent";
+import "./css/App.css";
+import NavBar from "./views/NavBar";
+import SideBar from "./views/SideBar";
+import PageContent from "./views/PageContent";
+import HomeContent from "./pages/HomeContent";
 
 export enum Pages {
   Home,

@@ -1,9 +1,9 @@
 import React from "react";
-import { Pages } from "./App";
-import "./PageContent.css";
-import AboutPage from "./AboutPage";
-import ProjectPage from "./ProjectPage";
-import ContactPage from "./ContactPage";
+import { Pages } from "../App";
+import "../css/PageContent.css";
+import AboutPage from "../pages/AboutPage";
+import ProjectPage from "../pages/ProjectPage";
+import ContactPage from "../pages/ContactPage";
 
 interface PageContentProps {
   page: Pages;

@@ -1,8 +1,8 @@
 import React from "react";
-import { Pages } from "./App";
-import robo from "./assets/Robo.png";
-import hobbies from "./assets/Hobbies.png";
-import summer from "./assets/summerShow.png";
+import { Pages } from "../App";
+import robo from "../assets/Robo.png";
+import hobbies from "../assets/Hobbies.png";
+import summer from "../assets/summerShow.png";
 
 interface AboutPageProps {
   page: Pages;

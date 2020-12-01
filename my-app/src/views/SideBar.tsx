@@ -1,9 +1,9 @@
 import React from "react";
-import { Pages } from "./App";
-import Content from "./CMS.json";
-import aboutImage from "./assets/About.png";
-import contactImage from "./assets/Contact.png";
-import projectImage from "./assets/Project.png";
+import { Pages } from "../App";
+import Content from "../CMS.json";
+import aboutImage from "../assets/About.png";
+import contactImage from "../assets/Contact.png";
+import projectImage from "../assets/Project.png";
 
 const Images = [aboutImage, contactImage, projectImage];
 
@@ -11,7 +11,7 @@ interface SideBarProps {
   page: Pages;
   setPage: (Page: Pages) => void;
 }
-const image = require("./assets/Logo.png");
+const image = require("../assets/Logo.png");
 
 interface SideBarState {}
 export default class SideBar extends React.Component<

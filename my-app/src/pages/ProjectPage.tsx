@@ -1,7 +1,7 @@
 import React from "react";
-import { Pages } from "./App";
-import "./Projects.css";
-import Content from "./CMS.json";
+import { Pages } from "../App";
+import "../css/Projects.css";
+import Content from "../CMS.json";
 import ImageGallery from "react-image-gallery";
 import ReactPlayer from "react-player/";
 

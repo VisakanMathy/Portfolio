@@ -1,6 +1,6 @@
 import React, { FormEvent } from "react";
 import axios from "axios";
-import "./Form.css";
+import "../css/Form.css";
 
 interface FormProps {}
 interface FormState {

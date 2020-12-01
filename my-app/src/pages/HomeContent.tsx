@@ -1,7 +1,7 @@
 import React from "react";
-import { Pages } from "./App";
-import "./HomePage.css";
-import Content from "./CMS.json";
+import { Pages } from "../App";
+import "../css/HomePage.css";
+import Content from "../CMS.json";
 
 interface HomeContentProps {
   setPage: (Page: Pages) => void;
