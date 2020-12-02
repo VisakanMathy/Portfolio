@@ -12,7 +12,6 @@ interface ProjectPageProps {
 }
 interface ProjectPageState {
   selectedProject: number;
-  processIndex: number;
 }
 export default class ProjectPage extends React.Component<
   ProjectPageProps,
@@ -22,10 +21,7 @@ export default class ProjectPage extends React.Component<
     super(props);
     this.state = {
       selectedProject: 0,
-      processIndex: 0,
     };
-    this.setImageIndex = this.setImageIndex.bind(this);
-    this.setSlide = this.setSlide.bind(this);
   }
 
   private ProcessRef = React.createRef<ImageGallery>();
@@ -35,9 +31,6 @@ export default class ProjectPage extends React.Component<
       console.log(index);
       return node.current.slideToIndex(index);
     } else return;
-  }
-  private setImageIndex(index: number) {
-    this.setState({ processIndex: index });
   }
   private selectProject(projectNo: number) {
     this.setState({ selectedProject: projectNo });
@@ -79,8 +72,9 @@ export default class ProjectPage extends React.Component<
   private displayProjectSegement(object: {
     title: string;
     image: string;
-    text: string;
+    text: string[];
     video: string;
+    images?: { original: string; thumbnail: string }[];
   }) {
     let media: any;
     if (object.video !== "") {
@@ -101,15 +95,14 @@ export default class ProjectPage extends React.Component<
   }
 
   private displayProjectGallery(
-    project: {
-      title: string;
-      images: { original: string; thumbnail: string };
-      text: string[];
+    images: {
+      original: string;
+      thumbnail: string;
     }[] = []
   ) {
     let ProcessImages: { original: string; thumbnail: string }[] = [];
-    project.map((process, index) => {
-      return ProcessImages.push(process.images);
+    images.map((process, index) => {
+      return ProcessImages.push(process);
     });
     return (
       <>
@@ -119,42 +112,8 @@ export default class ProjectPage extends React.Component<
             items={ProcessImages}
             showPlayButton={false}
             thumbnailPosition="right"
-            onBeforeSlide={(index) => this.setImageIndex(index)}
             additionalClass="centerRIG"
           />
-          <div />
-        </div>
-        <div className="Row">
-          <div className="ProjectSummary ">
-            {project.map((process, index) => {
-              let cName = "ProcessSub";
-              if (index === this.state.processIndex) {
-                cName = "ProcessSub show";
-              }
-              return (
-                <div className={cName}>
-                  {project.map((subProcess, subIndex) => {
-                    let PSTcName = "ProcessSubTitle";
-                    if (subIndex === this.state.processIndex) {
-                      PSTcName = "ProcessSubTitle selected";
-                    }
-                    return (
-                      <h3
-                        onClick={() => {
-                          this.setSlide(this.ProcessRef, subIndex);
-                        }}
-                        className={PSTcName}
-                      >
-                        {subProcess.title}
-                      </h3>
-                    );
-                  })}
-                  <br></br>
-                  {process.text}
-                </div>
-              );
-            })}
-          </div>
         </div>
       </>
     );
@@ -167,7 +126,9 @@ export default class ProjectPage extends React.Component<
           <div className="ProjectTitle">{project.title}</div>
 
           {this.displayProjectSegement(project.Outcome)}
-          {this.displayProjectGallery(project.Process)}
+          {project.Process.map((segment, index) => {
+            return this.displayProjectSegement(segment);
+          })}
         </div>
       </>
     );

@@ -38,40 +38,58 @@
     {
       "title": "The Summer Show",
       "tags": ["Project Management", "Streaming", "Design"],
-      "image": "https://i.imgur.com/RHGyzwA.jpg",
+      "image": "https://i.imgur.com/gjjzWmU.jpg",
       "Outcome": {
         "title": "Outcome",
-        "text": "The dog and ball launcher is designed to enhance the relationship between person and there pet by making it easier them to exercise the Dog through the use of a ball. The automatic ball launcher is designed to remove the need to strain ones back or shoulder when throwing a ball during fetch. ",
+        "text": [
+          "The dog and ball launcher is designed to enhance the relationship between person and there pet by making it easier them to exercise the Dog through the use of a ball. The automatic ball launcher is designed to remove the need to strain ones back or shoulder when throwing a ball during fetch. "
+        ],
         "image": "https://picsum.photos/id/1001/1920/1080",
         "video": ""
       },
       "Process": [
         {
           "title": "Ideation",
-          "images": {
-            "original": "https://picsum.photos/id/1018/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1018/250/150/"
-          },
+          "images": [
+            {
+              "original": "https://picsum.photos/id/1018/1000/600/",
+              "thumbnail": "https://picsum.photos/id/1018/250/150/"
+            }
+          ],
+          "image": "https://picsum.photos/id/1018/1000/600/",
+          "video": "",
           "text": [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
           ]
         },
         {
           "title": "Analysis",
-          "images": {
-            "original": "https://picsum.photos/id/1015/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1015/250/150/"
-          },
+          "images": [
+            {
+              "original": "https://picsum.photos/id/1015/1000/600/",
+              "thumbnail": "https://picsum.photos/id/1015/250/150/"
+            },
+            {
+              "original": "https://picsum.photos/id/1019/1000/600/",
+              "thumbnail": "https://picsum.photos/id/1019/250/150/"
+            }
+          ],
+          "image": "https://picsum.photos/id/1015/1000/600/",
+          "video": "",
           "text": [
             "Following choosing an idea and mechanism, the team then began research into mechanics the of launching the ball using Matlab to conduct engineering analysis. We also began analysing the donor components to evaluate the viability of the components in our mechanism"
           ]
         },
         {
           "title": "Prototyping",
-          "images": {
-            "original": "https://picsum.photos/id/1019/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1019/250/150/"
-          },
+          "images": [
+            {
+              "original": "https://picsum.photos/id/1019/1000/600/",
+              "thumbnail": "https://picsum.photos/id/1019/250/150/"
+            }
+          ],
+          "image": "https://picsum.photos/id/1019/1000/600/",
+          "video": "",
           "text": [
             "Following this research we begin building our final functional prototype using CAD and create a set of engineering drawings to go with it. The prototype used an arduino to control the electronics."
           ]
@@ -86,40 +104,55 @@
         "CAD",
         "Engineering Analysis"
       ],
-      "image": "https://i.imgur.com/RA0Ga6K.jpg",
+      "image": "https://i.imgur.com/EpzSgnW.jpg",
       "Outcome": {
         "title": "Outcome",
         "image": "",
-        "text": "The dog and ball launcher is designed to enhance the relationship between person and there pet by making it easier them to exercise the Dog through the use of a ball. The automatic ball launcher is designed to remove the need to strain ones back or shoulder when throwing a ball during fetch. ",
+        "text": [
+          "The dog and ball launcher is designed to enhance the relationship between person and there pet by making it easier them to exercise the Dog through the use of a ball. The automatic ball launcher is designed to remove the need to strain ones back or shoulder when throwing a ball during fetch. "
+        ],
         "video": "https://www.youtube.com/watch?v=1ssAqyN7chw"
       },
       "Process": [
         {
           "title": "Ideation",
-          "images": {
-            "original": "https://picsum.photos/id/1018/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1018/250/150/"
-          },
+          "images": [
+            {
+              "original": "https://picsum.photos/id/1018/1000/600/",
+              "thumbnail": "https://picsum.photos/id/1018/250/150/"
+            }
+          ],
+          "image": "https://i.imgur.com/He8zFRT.png",
+          "video": "",
           "text": [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
           ]
         },
         {
           "title": "Analysis",
-          "images": {
-            "original": "https://picsum.photos/id/1015/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1015/250/150/"
-          },
+          "images": [
+            {
+              "original": "https://picsum.photos/id/1015/1000/600/",
+              "thumbnail": "https://picsum.photos/id/1015/250/150/"
+            }
+          ],
+          "image": "https://i.imgur.com/lXFeKtz.png",
+          "video": "",
           "text": [
             "Following choosing an idea and mechanism, the team then began research into mechanics the of launching the ball using Matlab to conduct engineering analysis. We also began analysing the donor components to evaluate the viability of the components in our mechanism"
           ]
         },
         {
           "title": "Prototyping",
-          "images": {
-            "original": "https://picsum.photos/id/1019/1000/600/",
-            "thumbnail": "https://picsum.photos/id/1019/250/150/"
-          },
+          "images": [
+            {
+              "original": "https://picsum.photos/id/1019/1000/600/",
+              "thumbnail": "https://picsum.photos/id/1019/250/150/"
+            }
+          ],
+
+          "image": "https://picsum.photos/id/1019/1000/600/",
+          "video": "",
           "text": [
             "Following this research we begin building our final functional prototype using CAD and create a set of engineering drawings to go with it. The prototype used an arduino to control the electronics."
           ]
