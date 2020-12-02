@@ -11,10 +11,6 @@ export default class HomeContent extends React.Component<
   HomeContentProps,
   HomeContentState
 > {
-  constructor(props: HomeContentProps) {
-    super(props);
-  }
-
   render() {
     return (
       <div className="HomeBody">

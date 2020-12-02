@@ -14,9 +14,6 @@ export default class ProjectPage extends React.Component<
   AboutPageProps,
   AboutPageState
 > {
-  constructor(props: AboutPageProps) {
-    super(props);
-  }
   educationRef = React.createRef<HTMLDivElement>();
   swltkkRef = React.createRef<HTMLDivElement>();
   summerRef = React.createRef<HTMLDivElement>();
@@ -73,7 +70,10 @@ export default class ProjectPage extends React.Component<
               and the integration of design thinking and engineering knolwedge
             </div>
             <div className="CDimage">
-              <img src={robo}></img>
+              <img
+                src={robo}
+                alt="Visakan standing next to pepper the robot"
+              ></img>
             </div>
           </div>
           <div className="ContentFooter"></div>
@@ -96,9 +96,7 @@ export default class ProjectPage extends React.Component<
               This included arragning and settiung up large school events and
               handling admin and finances
             </div>
-            <div className="CDimage">
-              <img></img>
-            </div>
+            <div className="CDimage"></div>
           </div>
           <div className="ContentFooter"></div>
         </div>
@@ -118,7 +116,7 @@ export default class ProjectPage extends React.Component<
               events during the onset virtual events.
             </div>
             <div className="CDimage">
-              <img src={summer}></img>
+              <img src={summer} alt="Summershow Logo"></img>
               <button
                 onClick={() =>
                   window.open("https://deshowcase.london/", "_blank")
@@ -147,7 +145,7 @@ export default class ProjectPage extends React.Component<
               with my friends and family.
             </div>
             <div className="CDimage">
-              <img src={hobbies}></img>
+              <img src={hobbies} alt="Visakan doing his hobbies"></img>
             </div>
           </div>
           <div className="ContentFooter"></div>

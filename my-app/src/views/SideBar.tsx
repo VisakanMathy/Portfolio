@@ -11,16 +11,11 @@ interface SideBarProps {
   page: Pages;
   setPage: (Page: Pages) => void;
 }
-const image = require("../assets/Logo.png");
-
 interface SideBarState {}
 export default class SideBar extends React.Component<
   SideBarProps,
   SideBarState
 > {
-  constructor(props: SideBarProps) {
-    super(props);
-  }
   private displaySummary() {
     let summary = [];
     summary = Content.Pages[this.props.page].summary.map((text, index) => {
@@ -44,7 +39,7 @@ export default class SideBar extends React.Component<
         <div className={"SideBar"} id={Pages[this.props.page]}>
           <div className="SideContent">
             <div className="SideTitle">
-              <img src={Images[this.props.page - 1]}></img>
+              <img alt="Page Title" src={Images[this.props.page - 1]}></img>
             </div>
             <div className="SideText">
               <i>{this.displaySummary()}</i>

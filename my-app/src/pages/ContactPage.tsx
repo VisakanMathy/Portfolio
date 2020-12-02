@@ -1,4 +1,4 @@
-import React, { FormEvent } from "react";
+import React from "react";
 import { Pages } from "../App";
 import Form from "../components/Form";
 import "../css/ContentPage.css";
@@ -13,10 +13,6 @@ export default class ContentPage extends React.Component<
   ContactPageProps,
   ContactPageState
 > {
-  constructor(props: ContactPageProps) {
-    super(props);
-  }
-
   render() {
     return (
       <div className="ContentHolder">

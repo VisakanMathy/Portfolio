@@ -109,7 +109,7 @@ export default class ProjectPage extends React.Component<
   ) {
     let ProcessImages: { original: string; thumbnail: string }[] = [];
     project.map((process, index) => {
-      ProcessImages.push(process.images);
+      return ProcessImages.push(process.images);
     });
     return (
       <>

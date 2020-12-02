@@ -14,9 +14,6 @@ export default class PageContent extends React.Component<
   PageContentProps,
   PageContentState
 > {
-  constructor(props: PageContentProps) {
-    super(props);
-  }
   private scrollToNode(node: any) {
     node.scrollIntoView({ behavior: "smooth" });
   }
