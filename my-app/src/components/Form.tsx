@@ -49,7 +49,7 @@ export default class Form extends React.Component<FormProps, FormState> {
     }
   }
   resetForm() {
-    this.setState({ name: "", email: "", message: "" });
+    this.setState({ name: "", email: "", message: "", subject: "" });
   }
   handleSubmit(e: FormEvent) {
     e.preventDefault();
