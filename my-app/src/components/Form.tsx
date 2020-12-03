@@ -53,7 +53,7 @@ export default class Form extends React.Component<FormProps, FormState> {
   }
   handleSubmit(e: FormEvent) {
     e.preventDefault();
-    const API_PATH = "https://main.d2wj96f5p7gcs7.amplifyapp.com/";
+    const API_PATH = "165.22.125.205";
     axios({
       method: "post",
       url: API_PATH,
