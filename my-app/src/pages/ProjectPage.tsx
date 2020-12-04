@@ -78,11 +78,15 @@ export default class ProjectPage extends React.Component<
   }) {
     let media: any;
     if (object.video !== "") {
-      media = <ReactPlayer width="100%" height="100%" url={object.video} />;
-    } else media = <img src={object.image} />;
+      media = this.displayProjectVideo(object.video);
+    } else if (object.image !== "") {
+      media = this.displayProjectImage(object.image);
+    } else {
+      media = this.displayProjectGallery(object.images);
+    }
     return (
       <>
-        <div className="ProjectMedia">{media}</div>
+        {media}
         <div className="Row">
           <div className="ProjectSummary">
             <h3 className="ProcessSubTitle selected">{object.title}</h3>
@@ -93,23 +97,32 @@ export default class ProjectPage extends React.Component<
       </>
     );
   }
-
-  private displayProjectGallery(
+  displayProjectVideo(src: string) {
+    return (
+      <div className="ProjectMedia">
+        <ReactPlayer width="100%" height="100%" url={src} />
+      </div>
+    );
+  }
+  displayProjectImage(src: string) {
+    return (
+      <div className="ProjectMedia">
+        <img src={src} />
+      </div>
+    );
+  }
+  displayProjectGallery(
     images: {
       original: string;
       thumbnail: string;
     }[] = []
   ) {
-    let ProcessImages: { original: string; thumbnail: string }[] = [];
-    images.map((process, index) => {
-      return ProcessImages.push(process);
-    });
     return (
       <>
         <div className="ProjectMedia gallery">
           <ImageGallery
             ref={this.ProcessRef}
-            items={ProcessImages}
+            items={images}
             showPlayButton={false}
             thumbnailPosition="right"
             additionalClass="centerRIG"
