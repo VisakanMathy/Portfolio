@@ -1,5 +1,5 @@
 <?php
-header("Access-Control-Allow-Origin: https://main.d3skp8pnbu4rvc.amplifyapp.com/");
+header("Access-Control-Allow-Origin: https://main.d3skp8pnbu4rvc.amplifyapp.com/	");
 header("Access-Control-Allow-Headers: Content-Type");
 header('Content-Type: application/json');
 

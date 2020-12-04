@@ -1,5 +1,6 @@
 import React, { FormEvent } from "react";
 import axios from "axios";
+import emailjs from "emailjs-com";
 import "../css/Form.css";
 
 interface FormProps {}
@@ -51,27 +52,56 @@ export default class Form extends React.Component<FormProps, FormState> {
   resetForm() {
     this.setState({ name: "", email: "", message: "", subject: "" });
   }
+
   handleSubmit(e: FormEvent) {
     e.preventDefault();
-    const API_PATH = "https://165.22.125.205";
-    axios({
-      method: "post",
-      url: API_PATH,
-      headers: { "content-type": "application/json" },
-      data: this.state,
-    })
-      .then((result) => {
-        console.log(result);
-        this.setState({
-          mailSent: result.data.sent,
-          name: "",
-          email: "",
-          message: "",
-          subject: "",
-        });
-      })
-      .catch((error) => this.setState({ error: error.message }));
+    const { name, email, subject, message } = this.state;
+    let templateParams = {
+      name: name,
+      reply_to: email,
+      subject: subject,
+      message_html: message,
+    };
+    emailjs
+      .send(
+        "service_o1yiyqk",
+        "template_4c3ffyn",
+        templateParams,
+        "user_SV6cC5YhjyekEYy7NKW1y"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
+    this.resetForm();
   }
+
+  // handleSubmit(e: FormEvent) {
+  //   e.preventDefault();
+  //   const API_PATH = "https://165.22.125.205";
+  //   axios({
+  //     method: "post",
+  //     url: API_PATH,
+  //     headers: { "content-type": "application/json" },
+  //     data: this.state,
+  //   })
+  //     .then((result) => {
+  //       console.log(result);
+  //       this.setState({
+  //         mailSent: result.data.sent,
+  //         name: "",
+  //         email: "",
+  //         message: "",
+  //         subject: "",
+  //       });
+  //     })
+  //     .catch((error) => this.setState({ error: error.message }));
+  // }
   render() {
     return (
       <form id="contact-form" method="POST">
