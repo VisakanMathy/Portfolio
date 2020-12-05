@@ -39,59 +39,37 @@
       "title": "The Summer Show",
       "tags": ["Project Management", "Streaming", "Design"],
       "image": "https://i.imgur.com/gjjzWmU.jpg",
-      "Outcome": {
-        "title": "Outcome",
-        "text": [
-          "The dog and ball launcher is designed to enhance the relationship between person and there pet by making it easier them to exercise the Dog through the use of a ball. The automatic ball launcher is designed to remove the need to strain ones back or shoulder when throwing a ball during fetch. "
-        ],
-        "image": "https://picsum.photos/id/1001/1920/1080",
-        "video": ""
-      },
       "Process": [
         {
-          "title": "Ideation",
-          "images": [
-            {
-              "original": "https://picsum.photos/id/1018/1000/600/",
-              "thumbnail": "https://picsum.photos/id/1018/250/150/"
-            }
+          "title": "Outcome",
+          "text": [
+            "A team of students, lecturers and volunteers produced and ensured the success of the Design Engineering Summer Show. The show was designed to be a platform for graudating students to present the work initially a physical show that due to the onset of Covid 19 was transferred online."
           ],
           "image": "https://i.imgur.com/gjjzWmU.jpg",
-          "video": "",
-          "text": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-          ]
+          "video": ""
         },
         {
-          "title": "Analysis",
+          "title": "Events Manager",
           "images": [
             {
-              "original": "https://i.imgur.com/gjjzWmU.jpg",
-              "thumbnail": "https://i.imgur.com/gjjzWmU.jpg"
+              "original": "https://i.imgur.com/pKvCBwm.png",
+              "thumbnail": "https://i.imgur.com/pKvCBwm.png"
             },
             {
-              "original": "https://i.imgur.com/gjjzWmU.jpg",
-              "thumbnail": "https://i.imgur.com/gjjzWmU.jpg"
+              "original": "https://i.imgur.com/9Xrp9zg.png",
+              "thumbnail": "https://i.imgur.com/9Xrp9zg.png"
+            },
+            {
+              "original": "https://i.imgur.com/TtErrkw.png",
+              "thumbnail": "https://i.imgur.com/TtErrkw.png"
             }
           ],
           "image": "",
           "video": "",
           "text": [
-            "Following choosing an idea and mechanism, the team then began research into mechanics the of launching the ball using Matlab to conduct engineering analysis. We also began analysing the donor components to evaluate the viability of the components in our mechanism"
-          ]
-        },
-        {
-          "title": "Prototyping",
-          "images": [
-            {
-              "original": "https://picsum.photos/id/1019/1000/600/",
-              "thumbnail": "https://picsum.photos/id/1019/250/150/"
-            }
-          ],
-          "image": "https://picsum.photos/id/1019/1000/600/",
-          "video": "",
-          "text": [
-            "Following this research we begin building our final functional prototype using CAD and create a set of engineering drawings to go with it. The prototype used an arduino to control the electronics."
+            "The physical show would involve a series of guest talks that needed to be transitioned online. My role involved ensuring these events were successfully delivered through the online platform and to communicate with the guest speakers to collate information and ensure they were prepared. These were delivered using the streamyard platform and directed through to the dyson youtube channel and and the events page on the Show.",
+            "button https://deshowcase.london/ Visit Show",
+            "button https://www.youtube.com/playlist?list=PLQV0kdytAgUAxtayeE1KXISqFbm9Fd0rp Live Events"
           ]
         }
       ]
@@ -105,15 +83,15 @@
         "Engineering Analysis"
       ],
       "image": "https://i.imgur.com/EpzSgnW.jpg",
-      "Outcome": {
-        "title": "Outcome",
-        "image": "",
-        "text": [
-          "The dog and ball launcher is designed to enhance the relationship between person and there pet by making it easier them to exercise the Dog through the use of a ball. The automatic ball launcher is designed to remove the need to strain ones back or shoulder when throwing a ball during fetch. "
-        ],
-        "video": "https://www.youtube.com/watch?v=1ssAqyN7chw"
-      },
       "Process": [
+        {
+          "title": "Outcome",
+          "image": "",
+          "text": [
+            "The dog and ball automated ball launcher is designed to enhance the relationship between person and there pet by making it easier them to exercise the Dog through the use of a ball. The automatic ball launcher is designed to remove the need to strain ones back or shoulder when throwing a ball during fetch."
+          ],
+          "video": "https://www.youtube.com/watch?v=1ssAqyN7chw"
+        },
         {
           "title": "Ideation",
           "images": [
@@ -125,37 +103,130 @@
           "image": "https://i.imgur.com/He8zFRT.png",
           "video": "",
           "text": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            "This project began with large amounts of ideation using a double diamond approach to come up with different design ideas and launch mechanisms. Four different designs were sketched and roughly prototyped in blue foam."
           ]
         },
         {
           "title": "Analysis",
           "images": [
             {
-              "original": "https://picsum.photos/id/1015/1000/600/",
-              "thumbnail": "https://picsum.photos/id/1015/250/150/"
+              "original": "https://i.imgur.com/nYmgV6B.png",
+              "thumbnail": "https://i.imgur.com/nYmgV6B.png"
+            },
+            {
+              "original": "https://i.imgur.com/7ROCUKv.png",
+              "thumbnail": "https://i.imgur.com/7ROCUKv.png"
             }
           ],
-          "image": "https://i.imgur.com/lXFeKtz.png",
+          "image": "",
           "video": "",
           "text": [
-            "Following choosing an idea and mechanism, the team then began research into mechanics the of launching the ball using Matlab to conduct engineering analysis. We also began analysing the donor components to evaluate the viability of the components in our mechanism"
+            "Further research was conducted into the chosen mechanism and how viable it was with the low cost components found in relatively cheap donor products such as a hand drill. This required analysis of the required transmission ratios and power outputs. The launch velocities and ratios were plotted using MATLAB."
           ]
         },
         {
           "title": "Prototyping",
           "images": [
             {
-              "original": "https://picsum.photos/id/1019/1000/600/",
-              "thumbnail": "https://picsum.photos/id/1019/250/150/"
+              "original": "https://i.imgur.com/P833GzK.png",
+              "thumbnail": "https://i.imgur.com/P833GzK.png"
             }
           ],
 
-          "image": "https://picsum.photos/id/1019/1000/600/",
+          "image": "https://i.imgur.com/P833GzK.png ",
           "video": "",
           "text": [
-            "Following this research we begin building our final functional prototype using CAD and create a set of engineering drawings to go with it. The prototype used an arduino to control the electronics."
+            "In order to further demonstrate proof of concept, a physical test rig was produced using rapid-prototyping methods. Additionally the user experience was explored. The focus was to achieve the correct weight distribution and create an ergonomic shape."
           ]
+        },
+        {
+          "title": "Final Prototype",
+          "images": [
+            {
+              "original": "https://i.imgur.com/n9EHzge.png",
+              "thumbnail": "https://i.imgur.com/n9EHzge.png"
+            },
+            {
+              "original": "https://i.imgur.com/g4CfQrY.png",
+              "thumbnail": "https://i.imgur.com/g4CfQrY.png"
+            },
+            {
+              "original": "https://i.imgur.com/vl9OSvk.png",
+              "thumbnail": "https://i.imgur.com/vl9OSvk.png"
+            }
+          ],
+
+          "image": "",
+          "video": "",
+          "text": [
+            "A Cad model of the final prototype was designed and used to create a series of orthographic drawings and then the product was assembled and tested with our user groups."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Endo: The Open Source Continuum Robot",
+      "tags": [
+        "Medical Robotics",
+        "Hardware",
+        "Open Source",
+        "Additive Manufacturing"
+      ],
+      "image": "https://i.imgur.com/mX8v2TA.png",
+      "Process": [
+        {
+          "title": "Outcome",
+          "text": [
+            "A Continuum Manipulator is defined by its infinite degrees of freedom and is recognised within the field of robotics as a versatile tool specifically within medical fields. This project aimed to open up the technology and make it more available through the use of open source platforms such as GitHub and arduino. This would enable more researchers to access the field and furher develop the technology."
+          ],
+          "image": "https://i.imgur.com/mX8v2TA.png",
+          "video": ""
+        },
+        {
+          "title": "Design",
+          "text": [
+            "In accordance with the open source aspect the design of the robot utilised materials and production methods that were easily replicable. The designs were made using SOLIDWORKS and utilised a parametric design to enable other users to adjust key parameters such as spine length and diameter. These designs were made available on GitHub alongsie the Arduino control library.",
+            "button https://github.com/OpenSourceMedicalRobots/Endo-Continuum-Robot Cad Design",
+            "button https://github.com/OpenSourceMedicalRobots/Endo-Continuum-Robot-Library Arduino Library"
+          ],
+          "image": "https://i.imgur.com/DPc89Vu.png",
+          "video": ""
+        },
+        {
+          "title": "Control Algorithm",
+          "text": [
+            "One of the biggest hurdles in using continuum robots is the control mechanism. Due to the pliable nature of the robot, the kinematics is difficult and hard to mathematically model and therefore it is common to use an experimental approach to achieve a control mechanism. In order to enable this for future researches, an open source arduino library was developed and tested."
+          ],
+          "image": "https://i.imgur.com/pYgeX7g.png",
+          "video": ""
+        },
+        {
+          "title": "TMRB Publication",
+          "text": [
+            "Having completed the project I worked with the REDS LAB to focus on publishing my work in IEEE Transactions on Medical Robotics and Bionics"
+          ],
+          "image": "",
+          "video": "https://www.youtube.com/watch?v=eEjlFD5Np10"
+        }
+      ]
+    },
+    {
+      "title": "CODA: Making Music Practice More Meaningful",
+      "tags": [
+        "Medical Robotics",
+        "Hardware",
+        "Open Source",
+        "Additive Manufacturing"
+      ],
+      "image": "https://i.imgur.com/mX8v2TA.png",
+      "Process": [
+        {
+          "title": "Outcome",
+          "text": [
+            "A Continuum Manipulator is defined by its infinite degrees of freedom and is recognised within the field of robotics as a versatile tool specifically within medical fields. This project aimed to open up the technology and make it more available through the use of open source platforms such as GitHub and arduino. This would enable more researchers to access the field and furher develop the technology."
+          ],
+          "image": "https://i.imgur.com/mX8v2TA.png",
+          "video": ""
         }
       ]
     }

@@ -91,7 +91,25 @@ export default class ProjectPage extends React.Component<
           <div className="ProjectSummary">
             <h3 className="ProcessSubTitle selected">{object.title}</h3>
             <br></br>
-            {object.text}
+            {object.text.map((textString, index) => {
+              let element = textString.split(" ");
+              if (element[0] !== "button") {
+                return (
+                  <React.Fragment key={object.title + "textFragment" + index}>
+                    {textString}
+                    <br></br>
+                  </React.Fragment>
+                );
+              } else {
+                element.shift();
+                let url = element.shift();
+                return (
+                  <button onClick={() => window.open(url, "_blank")}>
+                    {element.join(" ")}
+                  </button>
+                );
+              }
+            })}
           </div>
         </div>
       </>
@@ -137,8 +155,6 @@ export default class ProjectPage extends React.Component<
       <>
         <div className="ProjectContent">
           <div className="ProjectTitle">{project.title}</div>
-
-          {this.displayProjectSegement(project.Outcome)}
           {project.Process.map((segment, index) => {
             return this.displayProjectSegement(segment);
           })}

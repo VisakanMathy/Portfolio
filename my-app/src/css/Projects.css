@@ -18,6 +18,11 @@
 .ProjectSummary {
   text-align: center;
 }
+.ProjectSummary button {
+  margin-top: 1em;
+  font-size: 0.9em;
+  padding: 0.5em 1.25em;
+}
 .ProjectMedia {
   width: 50%;
   height: calc(50vw * 0.5625);
@@ -32,8 +37,6 @@
   margin: unset;
 }
 .ProjectContent > .Row {
-  height: 10em;
-
   padding: 1em 25vw;
 }
 
@@ -60,6 +63,9 @@ h3 {
   transform: translateX(55px);
   height: 100%;
 }
+.ProjectMedia.gallery {
+  height: unset;
+}
 @media (orientation: portrait) {
   .centerRIG {
     transform: translateX(0);
@@ -70,8 +76,6 @@ h3 {
     height: calc(100vw * 0.5625);
   }
   .ProjectContent > .Row {
-    height: 10em;
-
     padding: 1em 5vw;
     margin: 0;
   }
@@ -83,8 +87,5 @@ h3 {
   .image-gallery-thumbnails-wrapper.left,
   .image-gallery-thumbnails-wrapper.right {
     display: none;
-  }
-  .ProjectMedia.gallery {
-    height: unset;
   }
 }
