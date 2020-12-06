@@ -218,14 +218,32 @@
         "Open Source",
         "Additive Manufacturing"
       ],
-      "image": "https://i.imgur.com/mX8v2TA.png",
+      "image": "https://i.imgur.com/ZPikZKd.png",
       "Process": [
         {
           "title": "Outcome",
           "text": [
             "A Continuum Manipulator is defined by its infinite degrees of freedom and is recognised within the field of robotics as a versatile tool specifically within medical fields. This project aimed to open up the technology and make it more available through the use of open source platforms such as GitHub and arduino. This would enable more researchers to access the field and furher develop the technology."
           ],
-          "image": "https://i.imgur.com/mX8v2TA.png",
+          "image": "",
+          "video": "https://www.youtube.com/watch?v=XmAGnQJ1YxA&feature=youtu.be"
+        },
+        {
+          "title": "Prototyping",
+          "text": [
+            "A Continuum Manipulator is defined by its infinite degrees of freedom and is recognised within the field of robotics as a versatile tool specifically within medical fields. This project aimed to open up the technology and make it more available through the use of open source platforms such as GitHub and arduino. This would enable more researchers to access the field and furher develop the technology."
+          ],
+          "image": "",
+          "images": [
+            {
+              "original": "https://i.imgur.com/iQBcGEF.gif",
+              "thumbnail": "https://i.imgur.com/ZWaOxNp.png"
+            },
+            {
+              "original": "https://i.imgur.com/rC4gMyz.gif",
+              "thumbnail": "https://i.imgur.com/SnRq2DA.png"
+            }
+          ],
           "video": ""
         }
       ]
