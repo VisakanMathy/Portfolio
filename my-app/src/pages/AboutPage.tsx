@@ -16,7 +16,6 @@ export default class ProjectPage extends React.Component<
 > {
   educationRef = React.createRef<HTMLDivElement>();
   swltkkRef = React.createRef<HTMLDivElement>();
-  summerRef = React.createRef<HTMLDivElement>();
   hobbiesRef = React.createRef<HTMLDivElement>();
   render() {
     return (
@@ -35,13 +34,7 @@ export default class ProjectPage extends React.Component<
             >
               SWLTKK
             </button>{" "}
-            &nbsp;
-            <button
-              onClick={() => this.props.scrollToNode(this.summerRef.current)}
-            >
-              THE SUMMER SHOW
-            </button>{" "}
-            &nbsp;
+            &nbsp; &nbsp;
             <button
               onClick={() => this.props.scrollToNode(this.hobbiesRef.current)}
             >
@@ -100,35 +93,7 @@ export default class ProjectPage extends React.Component<
           </div>
           <div className="ContentFooter"></div>
         </div>
-        <div className="Content limit" ref={this.summerRef}>
-          <div className="ContentTitle sub">The Summer Show</div>
-          <div className="ContentDesc container">
-            <div className="CDtext">
-              The four years I studied DesEng provided me with a unique skillset
-              but also connected me with a cohort of unique thinkers.
-              <br></br>
-              <br></br>I wanted to ensure we had legacy and so I volunteered to
-              be part of the Summer show team. This was a versatile team
-              dedicated to building the Summer Show website.
-              <br></br>
-              <br></br>
-              My role as an events manager required me to arrange and organise
-              events during the onset virtual events.
-            </div>
-            <div className="CDimage">
-              <img src={summer} alt="Summershow Logo"></img>
-              <button
-                onClick={() =>
-                  window.open("https://deshowcase.london/", "_blank")
-                }
-                style={{ transform: "scale(0.8)", margin: "5vh auto 0" }}
-              >
-                VISIT SHOW
-              </button>
-            </div>
-          </div>
-          <div className="ContentFooter"></div>
-        </div>
+
         <div className="Content limit" ref={this.hobbiesRef}>
           <div className="ContentTitle sub">My Hobbies</div>
           <div className="ContentDesc container">

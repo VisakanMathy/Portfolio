@@ -223,18 +223,48 @@
         {
           "title": "Outcome",
           "text": [
-            "A Continuum Manipulator is defined by its infinite degrees of freedom and is recognised within the field of robotics as a versatile tool specifically within medical fields. This project aimed to open up the technology and make it more available through the use of open source platforms such as GitHub and arduino. This would enable more researchers to access the field and furher develop the technology."
+            "An innovative business venture with the goal of creating a platform for musicians to share their experiences and track their progress. The device and platform is designed with the intention of helping aspiring musicians practice and stay engaged regardless of the initial struggles when learning an instrument."
+          ],
+          "image": "https://i.imgur.com/ZPikZKd.png",
+          "video": ""
+        },
+        {
+          "title": "Market Research",
+          "text": [
+            "Extensive Research was conducted into validity of the market. We analysed the potential size of the market we would be entering identify the specifc segments that we were interested in. Within these segments we analysed trends to justify to potential investors that the product being pitched was capable of strong growth and pitched at the Imperial Enterprise Lab as a part of the innovation pitch."
           ],
           "image": "",
-          "video": "https://www.youtube.com/watch?v=XmAGnQJ1YxA&feature=youtu.be"
+          "images": [
+            {
+              "original": "https://i.imgur.com/Z9ddOhE.png",
+              "thumbnail": "https://i.imgur.com/1NuTMLc.png"
+            },
+            {
+              "original": "https://i.imgur.com/GIeyXoN.png",
+              "thumbnail": "https://i.imgur.com/MlB4RJg.png"
+            },
+            {
+              "original": "https://i.imgur.com/kgTpaJj.png",
+              "thumbnail": "https://i.imgur.com/gVYnmQd.png"
+            }
+          ],
+          "video": ""
         },
         {
           "title": "Prototyping",
           "text": [
-            "A Continuum Manipulator is defined by its infinite degrees of freedom and is recognised within the field of robotics as a versatile tool specifically within medical fields. This project aimed to open up the technology and make it more available through the use of open source platforms such as GitHub and arduino. This would enable more researchers to access the field and furher develop the technology."
+            "To better present the concept to investors a set of “looks-like”, “feels-like and “works-like” prototypes were made. The “feels-like” prototypes were made through a series of iterations testing different weights, which allowed intensive user testing and the “works-like” prototype used an arudino combined with accelerometers and force sensors to demonstrate the key functionalities."
           ],
           "image": "",
           "images": [
+            {
+              "original": "https://i.imgur.com/SGjYr02.png",
+              "thumbnail": "https://i.imgur.com/SGjYr02.png"
+            },
+            {
+              "original": "https://i.imgur.com/v47Z28X.png",
+              "thumbnail": "https://i.imgur.com/v47Z28X.png"
+            },
             {
               "original": "https://i.imgur.com/iQBcGEF.gif",
               "thumbnail": "https://i.imgur.com/ZWaOxNp.png"
@@ -245,6 +275,16 @@
             }
           ],
           "video": ""
+        },
+        {
+          "title": "Soft Launch",
+          "text": [
+            "The final stage was to launch the website and video for the soft launch of the product. For this a series of high quality renders were developed to demonstrate the concept and a specific investor page was added for interested visitors. Furthermore, a Risk Register and 5 year Financial Projection was developed",
+            "button https://codamusicteam.wixsite.com/coda Visit Website"
+          ],
+          "image": "",
+          "images": [],
+          "video": "https://youtu.be/zmOQAdV4Ynk"
         }
       ]
     }
