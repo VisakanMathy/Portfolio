@@ -125,6 +125,13 @@ button {
   .Body {
     overflow-y: scroll;
   }
+  ul {
+    margin-block-end: 0.5em;
+    margin-block-start: 0.5em;
+  }
+  .Content {
+    padding: 0 2vh;
+  }
 }
 ul {
   padding: 0;
@@ -132,16 +139,15 @@ ul {
 ul > li {
   list-style-type: none;
   display: inline-block;
-  padding: 0 0.5em;
+  padding: 0.1em 0.75em;
   margin-right: 0.6em;
   margin-bottom: 0.4em;
   box-sizing: border-box;
   border: 1px solid black;
   border-radius: 10px;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 .Row {
-  background-color: #ececec;
   margin-bottom: 3em;
 }
 .flex-50 {

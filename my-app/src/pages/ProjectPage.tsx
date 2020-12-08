@@ -48,7 +48,9 @@ export default class ProjectPage extends React.Component<
               }}
               key={"Project" + index}
             >
-              <img className="CTimage" src={project.image}></img>
+              <div className="CTimageContainer">
+                <img className="CTimage" src={project.image}></img>
+              </div>
               <div className="CTdesc">
                 <div className="CTtitle">{project.title}</div>
                 <div className="CTtags">
@@ -61,8 +63,10 @@ export default class ProjectPage extends React.Component<
                       );
                     })}
                   </ul>
+                  <div className="CTsummary">{project.summary}</div>
                 </div>
               </div>
+              <div className="CTseeMore">Click to see more...</div>
             </div>
           );
         })}
@@ -85,11 +89,11 @@ export default class ProjectPage extends React.Component<
       media = this.displayProjectGallery(object.images);
     }
     return (
-      <>
+      <div className="ProjectSegment">
+        <div className="ProjectTitle">{object.title}</div>
         {media}
         <div className="Row">
           <div className="ProjectSummary">
-            <h3 className="ProcessSubTitle selected">{object.title}</h3>
             <br></br>
             {object.text.map((textString, index) => {
               let element = textString.split(" ");
@@ -112,7 +116,7 @@ export default class ProjectPage extends React.Component<
             })}
           </div>
         </div>
-      </>
+      </div>
     );
   }
   displayProjectVideo(src: string) {
@@ -154,7 +158,6 @@ export default class ProjectPage extends React.Component<
     return (
       <>
         <div className="ProjectContent">
-          <div className="ProjectTitle">{project.title}</div>
           {project.Process.map((segment, index) => {
             return this.displayProjectSegement(segment);
           })}
@@ -166,7 +169,9 @@ export default class ProjectPage extends React.Component<
   render() {
     if (this.props.page === Pages.SpecifiedProject) {
       return (
-        <div className="ContentHolder Project"> {this.displayProject()}</div>
+        <div className="ContentHolder Project scrollSnap">
+          {this.displayProject()}
+        </div>
       );
     } else return <div className="ContentHolder"> {this.displayTiles()}</div>;
   }
