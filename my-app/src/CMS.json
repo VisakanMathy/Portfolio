@@ -37,8 +37,10 @@
   "Projects": [
     {
       "title": "The Summer Show",
+      "titleShort": "The Summer Show",
       "tags": ["Project Management", "Streaming", "Design"],
       "image": "https://i.imgur.com/gjjzWmU.jpg",
+      "summary": "Producing the Design Engineering Show for 2020 graduates during Covid-19.",
       "Process": [
         {
           "title": "Outcome",
@@ -76,6 +78,7 @@
     },
     {
       "title": "Dog & Ball: The Automated Ball Thrower",
+      "titleShort": "Dog & Ball",
       "tags": [
         "Human Centered Design",
         "Rapid Prototyping",
@@ -83,6 +86,7 @@
         "Engineering Analysis"
       ],
       "image": "https://i.imgur.com/EpzSgnW.jpg",
+      "summary": "A product opportunity where we create a specialised product targetting sufferers of muscular skeletal issues and cater to the mass market.",
       "Process": [
         {
           "title": "Outcome",
@@ -166,6 +170,7 @@
     },
     {
       "title": "Endo: The Open Source Continuum Robot",
+      "titleShort": "Endo",
       "tags": [
         "Medical Robotics",
         "Hardware",
@@ -173,6 +178,7 @@
         "Additive Manufacturing"
       ],
       "image": "https://i.imgur.com/mX8v2TA.png",
+      "summary": "A research project exploring how to make complex robotics more accessible through open source platforms.",
       "Process": [
         {
           "title": "Outcome",
@@ -212,6 +218,7 @@
     },
     {
       "title": "CODA: Making Music Practice More Meaningful",
+      "titleShort": "CODA",
       "tags": [
         "Medical Robotics",
         "Hardware",
@@ -219,6 +226,7 @@
         "Additive Manufacturing"
       ],
       "image": "https://i.imgur.com/ZPikZKd.png",
+      "summary": "A business venture where we develop a device to track how you play the drums and show you how to improve.",
       "Process": [
         {
           "title": "Outcome",

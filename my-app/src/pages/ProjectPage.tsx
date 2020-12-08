@@ -48,7 +48,9 @@ export default class ProjectPage extends React.Component<
               }}
               key={"Project" + index}
             >
-              <img className="CTimage" src={project.image}></img>
+              <div className="CTimageContainer">
+                <img className="CTimage" src={project.image}></img>
+              </div>
               <div className="CTdesc">
                 <div className="CTtitle">{project.title}</div>
                 <div className="CTtags">
@@ -61,8 +63,10 @@ export default class ProjectPage extends React.Component<
                       );
                     })}
                   </ul>
+                  <div className="CTsummary">{project.summary}</div>
                 </div>
               </div>
+              <div className="CTseeMore">Click to see more...</div>
             </div>
           );
         })}
