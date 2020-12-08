@@ -97,4 +97,7 @@
   .CTdesc {
     flex-basis: 100%;
   }
+  .ContentTile {
+    margin: 5% 1%;
+  }
 }
