@@ -36,43 +36,82 @@
   ],
   "Projects": [
     {
-      "title": "The Summer Show",
-      "titleShort": "The Summer Show",
-      "tags": ["Project Management", "Streaming", "Design"],
-      "image": "https://i.imgur.com/gjjzWmU.jpg",
-      "summary": "Producing the Design Engineering Show for 2020 graduates during Covid-19.",
+      "title": "CODA: Making Music Practice More Meaningful",
+      "titleShort": "CODA",
+      "tags": [
+        "Medical Robotics",
+        "Hardware",
+        "Open Source",
+        "Additive Manufacturing"
+      ],
+      "image": "https://i.imgur.com/ZPikZKd.png",
+      "summary": "A business venture where we develop a device to track how you play the drums and show you how to improve.",
       "Process": [
         {
-          "title": "Outcome",
+          "title": "CODA: Making Music Practice More Meaningful",
           "text": [
-            "A team of students, lecturers and volunteers produced and ensured the success of the Design Engineering Summer Show. The show was designed to be a platform for graudating students to present the work initially a physical show that due to the onset of Covid 19 was transferred online."
+            "An innovative business venture with the goal of creating a platform for musicians to share their experiences and track their progress. The device and platform is designed with the intention of helping aspiring musicians practice and stay engaged regardless of the initial struggles when learning an instrument."
           ],
-          "image": "https://i.imgur.com/gjjzWmU.jpg",
+          "image": "https://i.imgur.com/ZPikZKd.png",
           "video": ""
         },
         {
-          "title": "Events Manager",
-          "images": [
-            {
-              "original": "https://i.imgur.com/pKvCBwm.png",
-              "thumbnail": "https://i.imgur.com/pKvCBwm.png"
-            },
-            {
-              "original": "https://i.imgur.com/9Xrp9zg.png",
-              "thumbnail": "https://i.imgur.com/9Xrp9zg.png"
-            },
-            {
-              "original": "https://i.imgur.com/TtErrkw.png",
-              "thumbnail": "https://i.imgur.com/TtErrkw.png"
-            }
+          "title": "Market Research",
+          "text": [
+            "Extensive Research was conducted into validity of the market. We analysed the potential size of the market we would be entering identify the specifc segments that we were interested in. Within these segments we analysed trends to justify to potential investors that the product being pitched was capable of strong growth and pitched at the Imperial Enterprise Lab as a part of the innovation pitch."
           ],
           "image": "",
-          "video": "",
+          "images": [
+            {
+              "original": "https://i.imgur.com/Z9ddOhE.png",
+              "thumbnail": "https://i.imgur.com/1NuTMLc.png"
+            },
+            {
+              "original": "https://i.imgur.com/GIeyXoN.png",
+              "thumbnail": "https://i.imgur.com/MlB4RJg.png"
+            },
+            {
+              "original": "https://i.imgur.com/kgTpaJj.png",
+              "thumbnail": "https://i.imgur.com/gVYnmQd.png"
+            }
+          ],
+          "video": ""
+        },
+        {
+          "title": "Prototyping",
           "text": [
-            "The physical show would involve a series of guest talks that needed to be transitioned online. My role involved ensuring these events were successfully delivered through the online platform and to communicate with the guest speakers to collate information and ensure they were prepared. These were delivered using the streamyard platform and directed through to the dyson youtube channel and and the events page on the Show.",
-            "button https://deshowcase.london/ Visit Show",
-            "button https://www.youtube.com/playlist?list=PLQV0kdytAgUAxtayeE1KXISqFbm9Fd0rp Live Events"
-          ]
+            "To better present the concept to investors a set of “looks-like”, “feels-like and “works-like” prototypes were made. The “feels-like” prototypes were made through a series of iterations testing different weights, which allowed intensive user testing and the “works-like” prototype used an arudino combined with accelerometers and force sensors to demonstrate the key functionalities."
+          ],
+          "image": "",
+          "images": [
+            {
+              "original": "https://i.imgur.com/SGjYr02.png",
+              "thumbnail": "https://i.imgur.com/SGjYr02.png"
+            },
+            {
+              "original": "https://i.imgur.com/v47Z28X.png",
+              "thumbnail": "https://i.imgur.com/v47Z28X.png"
+            },
+            {
+              "original": "https://i.imgur.com/iQBcGEF.gif",
+              "thumbnail": "https://i.imgur.com/ZWaOxNp.png"
+            },
+            {
+              "original": "https://i.imgur.com/rC4gMyz.gif",
+              "thumbnail": "https://i.imgur.com/SnRq2DA.png"
+            }
+          ],
+          "video": ""
+        },
+        {
+          "title": "Soft Launch",
+          "text": [
+            "The final stage was to launch the website and video for the soft launch of the product. For this a series of high quality renders were developed to demonstrate the concept and a specific investor page was added for interested visitors. Furthermore, a Risk Register and 5 year Financial Projection was developed",
+            "button https://codamusicteam.wixsite.com/coda Visit Website"
+          ],
+          "image": "",
+          "images": [],
+          "video": "https://youtu.be/zmOQAdV4Ynk"
         }
       ]
     },
@@ -89,7 +128,7 @@
       "summary": "A product opportunity where we create a specialised product targetting sufferers of muscular skeletal issues and cater to the mass market.",
       "Process": [
         {
-          "title": "Outcome",
+          "title": "Dog & Ball: The Automated Ball Thrower",
           "image": "",
           "text": [
             "The dog and ball automated ball launcher is designed to enhance the relationship between person and there pet by making it easier them to exercise the Dog through the use of a ball. The automatic ball launcher is designed to remove the need to strain ones back or shoulder when throwing a ball during fetch."
@@ -181,7 +220,7 @@
       "summary": "A research project exploring how to make complex robotics more accessible through open source platforms.",
       "Process": [
         {
-          "title": "Outcome",
+          "title": "Endo: The Open Source Continuum Robot",
           "text": [
             "A Continuum Manipulator is defined by its infinite degrees of freedom and is recognised within the field of robotics as a versatile tool specifically within medical fields. This project aimed to open up the technology and make it more available through the use of open source platforms such as GitHub and arduino. This would enable more researchers to access the field and furher develop the technology."
           ],
@@ -217,82 +256,43 @@
       ]
     },
     {
-      "title": "CODA: Making Music Practice More Meaningful",
-      "titleShort": "CODA",
-      "tags": [
-        "Medical Robotics",
-        "Hardware",
-        "Open Source",
-        "Additive Manufacturing"
-      ],
-      "image": "https://i.imgur.com/ZPikZKd.png",
-      "summary": "A business venture where we develop a device to track how you play the drums and show you how to improve.",
+      "title": "The Summer Show",
+      "titleShort": "The Summer Show",
+      "tags": ["Project Management", "Streaming", "Design"],
+      "image": "https://i.imgur.com/gjjzWmU.jpg",
+      "summary": "Producing the Design Engineering Show for 2020 graduates during Covid-19.",
       "Process": [
         {
-          "title": "Outcome",
+          "title": "The Summer Show",
           "text": [
-            "An innovative business venture with the goal of creating a platform for musicians to share their experiences and track their progress. The device and platform is designed with the intention of helping aspiring musicians practice and stay engaged regardless of the initial struggles when learning an instrument."
+            "A team of students, lecturers and volunteers produced and ensured the success of the Design Engineering Summer Show. The show was designed to be a platform for graudating students to present the work initially a physical show that due to the onset of Covid 19 was transferred online."
           ],
-          "image": "https://i.imgur.com/ZPikZKd.png",
+          "image": "https://i.imgur.com/gjjzWmU.jpg",
           "video": ""
         },
         {
-          "title": "Market Research",
-          "text": [
-            "Extensive Research was conducted into validity of the market. We analysed the potential size of the market we would be entering identify the specifc segments that we were interested in. Within these segments we analysed trends to justify to potential investors that the product being pitched was capable of strong growth and pitched at the Imperial Enterprise Lab as a part of the innovation pitch."
-          ],
-          "image": "",
+          "title": "Events Manager",
           "images": [
             {
-              "original": "https://i.imgur.com/Z9ddOhE.png",
-              "thumbnail": "https://i.imgur.com/1NuTMLc.png"
+              "original": "https://i.imgur.com/pKvCBwm.png",
+              "thumbnail": "https://i.imgur.com/pKvCBwm.png"
             },
             {
-              "original": "https://i.imgur.com/GIeyXoN.png",
-              "thumbnail": "https://i.imgur.com/MlB4RJg.png"
+              "original": "https://i.imgur.com/9Xrp9zg.png",
+              "thumbnail": "https://i.imgur.com/9Xrp9zg.png"
             },
             {
-              "original": "https://i.imgur.com/kgTpaJj.png",
-              "thumbnail": "https://i.imgur.com/gVYnmQd.png"
+              "original": "https://i.imgur.com/TtErrkw.png",
+              "thumbnail": "https://i.imgur.com/TtErrkw.png"
             }
           ],
-          "video": ""
-        },
-        {
-          "title": "Prototyping",
-          "text": [
-            "To better present the concept to investors a set of “looks-like”, “feels-like and “works-like” prototypes were made. The “feels-like” prototypes were made through a series of iterations testing different weights, which allowed intensive user testing and the “works-like” prototype used an arudino combined with accelerometers and force sensors to demonstrate the key functionalities."
-          ],
           "image": "",
-          "images": [
-            {
-              "original": "https://i.imgur.com/SGjYr02.png",
-              "thumbnail": "https://i.imgur.com/SGjYr02.png"
-            },
-            {
-              "original": "https://i.imgur.com/v47Z28X.png",
-              "thumbnail": "https://i.imgur.com/v47Z28X.png"
-            },
-            {
-              "original": "https://i.imgur.com/iQBcGEF.gif",
-              "thumbnail": "https://i.imgur.com/ZWaOxNp.png"
-            },
-            {
-              "original": "https://i.imgur.com/rC4gMyz.gif",
-              "thumbnail": "https://i.imgur.com/SnRq2DA.png"
-            }
-          ],
-          "video": ""
-        },
-        {
-          "title": "Soft Launch",
+          "video": "",
           "text": [
-            "The final stage was to launch the website and video for the soft launch of the product. For this a series of high quality renders were developed to demonstrate the concept and a specific investor page was added for interested visitors. Furthermore, a Risk Register and 5 year Financial Projection was developed",
-            "button https://codamusicteam.wixsite.com/coda Visit Website"
-          ],
-          "image": "",
-          "images": [],
-          "video": "https://youtu.be/zmOQAdV4Ynk"
+            "The physical show would involve a series of guest talks that needed to be transitioned online. My role involved ensuring these events were successfully delivered through the online platform and to communicate with the guest speakers to collate information and ensure they were prepared. These were delivered using the streamyard platform and directed through to the dyson youtube channel and and the events page on the Show.",
+            "button https://deshowcase.london/ Visit Show",
+            "button https://www.youtube.com/playlist?list=PLQV0kdytAgUAxtayeE1KXISqFbm9Fd0rp Live Events"
+          ]
         }
       ]
     }
