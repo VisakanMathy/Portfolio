@@ -4,6 +4,7 @@ import "../css/Projects.css";
 import Content from "../CMS.json";
 import ImageGallery from "react-image-gallery";
 import ReactPlayer from "react-player/";
+import VizSensor from "react-visibility-sensor";
 
 interface ProjectPageProps {
   page: Pages;
@@ -12,6 +13,7 @@ interface ProjectPageProps {
 }
 interface ProjectPageState {
   selectedProject: number;
+  imgViz: boolean[];
 }
 export default class ProjectPage extends React.Component<
   ProjectPageProps,
@@ -21,19 +23,11 @@ export default class ProjectPage extends React.Component<
     super(props);
     this.state = {
       selectedProject: 0,
+      imgViz: [],
     };
   }
-
-  private ProcessRef = React.createRef<ImageGallery>();
-  setSlide(node: React.RefObject<ImageGallery>, index: number) {
-    console.log("here");
-    if (node.current) {
-      console.log(index);
-      return node.current.slideToIndex(index);
-    } else return;
-  }
   private selectProject(projectNo: number) {
-    this.setState({ selectedProject: projectNo });
+    this.setState({ selectedProject: projectNo, imgViz: [] });
     this.props.setPage(Pages.SpecifiedProject);
   }
   private displayTiles() {
@@ -73,13 +67,17 @@ export default class ProjectPage extends React.Component<
       </div>
     );
   }
-  private displayProjectSegement(object: {
-    title: string;
-    image: string;
-    text: string[];
-    video: string;
-    images?: { original: string; thumbnail: string }[];
-  }) {
+  private displayProjectSegement(
+    refNode: React.Ref<HTMLDivElement>,
+    object: {
+      title: string;
+      image: string;
+      text: string[];
+      video: string;
+      images?: { original: string; thumbnail: string }[];
+    },
+    pIndex: number
+  ) {
     let media: any;
     if (object.video !== "") {
       media = this.displayProjectVideo(object.video);
@@ -89,9 +87,17 @@ export default class ProjectPage extends React.Component<
       media = this.displayProjectGallery(object.images);
     }
     return (
-      <div className="ProjectSegment">
+      <div className="ProjectSegment" ref={refNode}>
         <div className="ProjectTitle">{object.title}</div>
-        {media}
+        <VizSensor
+          onChange={(isVisible) => {
+            let currentState = this.state.imgViz;
+            currentState[pIndex] = isVisible;
+            this.setState({ imgViz: currentState });
+          }}
+        >
+          {media}
+        </VizSensor>
         <div className="Row">
           <div className="ProjectSummary">
             <br></br>
@@ -143,7 +149,6 @@ export default class ProjectPage extends React.Component<
       <>
         <div className="ProjectMedia gallery">
           <ImageGallery
-            ref={this.ProcessRef}
             items={images}
             showPlayButton={false}
             thumbnailPosition="right"
@@ -155,12 +160,30 @@ export default class ProjectPage extends React.Component<
   }
   private displayProject() {
     let project = Content.Projects[this.state.selectedProject];
+    let refNodes: React.Ref<HTMLDivElement>[] = [];
     return (
       <>
         <div className="ProjectContent">
           {project.Process.map((segment, index) => {
-            return this.displayProjectSegement(segment);
+            refNodes.push(React.createRef<HTMLDivElement>());
+            return this.displayProjectSegement(refNodes[index], segment, index);
           })}
+          <div className="ButtonGroup Nodes">
+            {project.Process.map((segment, index) => {
+              return (
+                <button
+                  className={this.state.imgViz[index] ? "selected" : ""}
+                  onClick={() => this.props.scrollToNode(refNodes[index])}
+                >
+                  <div className="circle" />
+                  {"  "}
+                  <div className="text">
+                    {index !== 0 ? segment.title : project.titleShort}
+                  </div>
+                </button>
+              );
+            })}
+          </div>
         </div>
       </>
     );

@@ -4,7 +4,6 @@
 }
 .ProjectSegment {
   height: 94vh;
-  scroll-snap-align: start;
 }
 
 .ProjectContent {
@@ -83,6 +82,9 @@ h3 {
   .image-gallery-thumbnails-wrapper.left,
   .image-gallery-thumbnails-wrapper.right {
     display: none;
+  }
+  .ProjectTitle {
+    padding: 5vh 5vw 1em;
   }
 }
 @media (max-width: 900px) {

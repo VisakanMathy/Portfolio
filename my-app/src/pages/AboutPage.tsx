@@ -23,21 +23,15 @@ export default class ProjectPage extends React.Component<
         <div className="Content limit Center">
           <div className="ContentTitle">My Story</div>
           <div className="ContentDesc text-center">
-            <button
-              onClick={() => this.props.scrollToNode(this.educationRef.current)}
-            >
+            <button onClick={() => this.props.scrollToNode(this.educationRef)}>
               EDUCATION
             </button>{" "}
             &nbsp;
-            <button
-              onClick={() => this.props.scrollToNode(this.swltkkRef.current)}
-            >
+            <button onClick={() => this.props.scrollToNode(this.swltkkRef)}>
               SWLTKK
             </button>{" "}
             &nbsp; &nbsp;
-            <button
-              onClick={() => this.props.scrollToNode(this.hobbiesRef.current)}
-            >
+            <button onClick={() => this.props.scrollToNode(this.hobbiesRef)}>
               MY HOBBIES
             </button>
           </div>

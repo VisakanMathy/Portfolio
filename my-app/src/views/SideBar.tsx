@@ -41,9 +41,7 @@ export default class SideBar extends React.Component<
             <div className="SideTitle">
               <img alt="Page Title" src={Images[this.props.page - 1]}></img>
             </div>
-            <div className="SideText">
-              <i>{this.displaySummary()}</i>
-            </div>
+            <div className="SideText">{this.displaySummary()}</div>
             <div className="SideFooter">
               <button>RESUME</button>
             </div>
