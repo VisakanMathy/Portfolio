@@ -1,0 +1,12 @@
+.left-10-5 {
+  text-align: left;
+}
+.ContentTitle.Contact {
+  margin-top: 11vh;
+}
+
+@media (orientation: portrait) and (max-width: 900px) {
+  .left-10-5 {
+    margin-left: 5%;
+  }
+}
