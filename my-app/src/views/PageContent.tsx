@@ -19,13 +19,6 @@ export default class PageContent extends React.Component<
       node.current.scrollIntoView({ behavior: "smooth" });
     }
   }
-  private nodeInView(node: any) {
-    if (node.current.scrollTop === 0) {
-      console.log(node.current.scrollTop);
-      return true;
-    } else return false;
-  }
-
   private displayPage() {
     switch (this.props.page) {
       case Pages.About:
