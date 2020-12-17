@@ -7,6 +7,7 @@ export default function AboutPage() {
     <React.Fragment>
       <Navbar />
       <div className="FullPage AboutPage"></div>
+      About
     </React.Fragment>
   );
 }

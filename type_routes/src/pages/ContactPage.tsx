@@ -7,6 +7,7 @@ export default function ContactPage() {
     <React.Fragment>
       <Navbar />
       <div className="FullPage ContactPage"></div>
+      Contact
     </React.Fragment>
   );
 }

@@ -5,35 +5,31 @@ import {
   Switch,
   Route,
   useRouteMatch,
-  useParams,
   Link,
+  RouteComponentProps,
 } from "react-router-dom";
+import Content from "../cms/CMS.json";
 
 export default function ProjectPage() {
   let match = useRouteMatch();
-  let x = ["Project1", "Project2", "Project3", "Project4"];
   return (
     <React.Fragment>
       <Navbar />
       <div className="FullPage ProjectPage">
-        <br></br>
-
-        <ul>
-          {x.map((string, index) => {
-            return (
-              <li>
-                <Link to={match.url + "/:" + string}>{string}</Link>
-              </li>
-            );
-          })}
-        </ul>
-
         <Switch>
-          <Route path={`${match.path}/:topicId`}>
-            <Topic />
-          </Route>
+          <Route path={`${match.path}/:ProjectId`} component={Project}></Route>
           <Route path={match.path}>
-            <h3>Please select a topic.</h3>
+            Project
+            <br></br>
+            <ul>
+              {Content.Projects.map((string, index) => {
+                return (
+                  <li>
+                    <Link to={match.url + "/:" + index}>{string.title}</Link>
+                  </li>
+                );
+              })}
+            </ul>
           </Route>
         </Switch>
       </div>
@@ -41,7 +37,9 @@ export default function ProjectPage() {
   );
 }
 
-function Topic() {
-  let topicId = useParams();
-  return <h3>Requested topic ID: {topicId}</h3>;
+type TParams = { ProjectId: string };
+
+function Project({ match }: RouteComponentProps<TParams>) {
+  let project = Content.Projects[Number(match.params.ProjectId.substring(1))];
+  return <h3>{project.title}</h3>;
 }

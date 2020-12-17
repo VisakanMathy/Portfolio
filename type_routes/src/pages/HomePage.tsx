@@ -7,6 +7,7 @@ export default function HomePage() {
     <React.Fragment>
       <Navbar />
       <div className="FullPage HomePage"></div>
+      Home
     </React.Fragment>
   );
 }
