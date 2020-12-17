@@ -1,16 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./css/NavBar.css";
 
-interface NavBarProps {}
-interface NavBarState {
-  open: boolean;
-}
-export default class NavBar extends React.Component<NavBarProps, NavBarState> {
-  constructor(props: NavBarProps) {
-    super(props);
-  }
 
-  render() {
+export default function NavBar {
     return (
       <div className="NavBar">
         <nav>

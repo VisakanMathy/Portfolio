@@ -1,11 +1,11 @@
 import React from "react";
 import "./css/HomePage.css";
-import Navbar from "../components/Navbar";
+import NavBar from "../components/NavBar";
 
 export default function HomePage() {
   return (
     <React.Fragment>
-      <Navbar />
+      <NavBar />
       <div className="FullPage HomePage"></div>
       Home
     </React.Fragment>
