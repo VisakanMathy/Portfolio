@@ -6,20 +6,17 @@ export default function NavBar() {
   return (
     <div className="NavBar">
       <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/projects">Projects</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-        </ul>
+        <div className="NavButtonGroup">
+          <Link to="/about">
+            <button> About Me</button>
+          </Link>
+          <Link to="/projects">
+            <button>Projects</button>
+          </Link>
+          <Link to="/contact">
+            <button>Contact</button>
+          </Link>
+        </div>
       </nav>
       <div className="ButtonGroup"></div>
     </div>

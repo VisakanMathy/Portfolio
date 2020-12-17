@@ -2,3 +2,29 @@ body {
   width: 100vw;
   height: 100vh;
 }
+#About {
+  background: rgba(144, 204, 244);
+}
+#Projects {
+  background: rgba(252, 136, 136);
+}
+#Contact {
+  background: rgba(243, 210, 80);
+}
+#About70 {
+  background: rgba(144, 204, 244, 70);
+}
+#Projects70 {
+  background: rgba(252, 136, 136, 70);
+}
+#Contact70 {
+  background: rgba(243, 210, 80, 70);
+}
+:focus {
+  outline: none;
+}
+.FullPage {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}

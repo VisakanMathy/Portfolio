@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./css/ProjectPage.css";
 import NavBar from "../components/NavBar";
 
@@ -15,8 +15,7 @@ export default function ProjectPage() {
   let match = useRouteMatch();
   return (
     <React.Fragment>
-      <NavBar />
-      <div className="FullPage ProjectPage">
+      <div className="FullPage">
         <Switch>
           <Route path={`${match.path}/:ProjectId`} component={Project}></Route>
           <Route path={match.path}>
@@ -34,6 +33,7 @@ export default function ProjectPage() {
           </Route>
         </Switch>
       </div>
+      <NavBar />
     </React.Fragment>
   );
 }
