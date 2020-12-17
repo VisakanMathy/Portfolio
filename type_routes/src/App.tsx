@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import HomePage from "./Pages/HomePage";
-import ProjectPage from "./Pages/ProjectPage";
-import ContactPage from "./Pages/ContactPage";
-import AboutPage from "./Pages/AboutPage";
+import HomePage from "./pages/HomePage";
+import ProjectPage from "./pages/ProjectPage";
+import ContactPage from "./pages/ContactPage";
+import AboutPage from "./pages/AboutPage";
 import "./css/App.css";
 
 export enum Pages {
