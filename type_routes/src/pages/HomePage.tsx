@@ -1,12 +1,12 @@
 import React from "react";
-import "./css/ContactPage.css";
+import "./css/HomePage.css";
 import Navbar from "../components/Navbar";
 
-export default function ContactPage() {
+export default function HomePage() {
   return (
     <React.Fragment>
       <Navbar />
-      <div className="FullPage ContactPage"></div>
+      <div className="FullPage HomePage"></div>
     </React.Fragment>
   );
 }

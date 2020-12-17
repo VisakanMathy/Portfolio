@@ -15,7 +15,6 @@
 }
 .Body {
   background-color: #ececec;
-  background-image: url("/src/assets/paper.jpg");
   height: 100vh;
   position: relative;
   display: flex;
