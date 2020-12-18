@@ -1,3 +1,59 @@
 .ProjectPage {
   width: 100vw;
 }
+
+.ProjectTile {
+  margin: 1% 1%;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+  position: relative;
+  color: black;
+  text-decoration: none;
+}
+.ProjectTileImageContainer {
+  flex-basis: 40%;
+}
+.ProjectTileImage {
+  width: 100%;
+  height: 100%;
+  background-color: #f2f2f2;
+}
+.ProjectTileDescription {
+  padding-top: 2.5%;
+  flex-basis: 52.5%;
+  padding-right: 5%;
+  padding-left: 2.5%;
+}
+.ProjectTileTitle {
+  font-size: 1.75em;
+  margin-bottom: 0.5em;
+}
+.ProjectTileSummary {
+  margin: 1.5em 0;
+}
+
+@media (orientation: landscape) and (max-width: 1600px) {
+  .ProjectTileTags {
+    display: none;
+  }
+}
+@media (orientation: landscape) and (max-width: 1200px) {
+  .ProjectTileSummary {
+    display: none;
+  }
+}
+@media (orientation: portrait) {
+  .ProjectTileImageContainer {
+    flex-basis: 100%;
+  }
+  .ProjectTileDescription {
+    flex-basis: 100%;
+  }
+  .ProjectTile {
+    margin: 5% 5%;
+  }
+}

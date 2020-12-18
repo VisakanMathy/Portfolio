@@ -18,7 +18,9 @@
   font-size: 1.15em;
   margin: 0.25em;
 }
-
+.NavButtonGroup button.blurred {
+  color: -internal-light-dark(rgba(16, 16, 16, 0.3), white);
+}
 .NavButtonGroup button:hover:not([disabled]):after {
   content: "";
   display: block;

@@ -24,7 +24,45 @@ body {
   outline: none;
 }
 .FullPage {
-  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
   height: 100vh;
+  background-color: white;
   position: relative;
+  font-family: "Lora", serif;
+}
+.PageSection {
+  flex-basis: 64vw;
+  overflow-y: scroll;
+  height: 100vh;
+  padding: 0 3vw;
+}
+@media (orientation: portrait) {
+  .PageSection {
+    height: unset;
+  }
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+ul {
+  padding: 0;
+}
+ul > li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.35em 0.75em;
+  margin-right: 0.6em;
+  margin-bottom: 0.4em;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 50px;
+  font-size: 0.8rem;
+}
+
+@media (orientation: portrait) {
+  .PageSection {
+    flex-basis: 100vw;
+  }
 }

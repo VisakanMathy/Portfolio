@@ -1,0 +1,32 @@
+.SideBar {
+  flex-basis: 30vw;
+  height: 100vh;
+  text-align: center;
+  animation: leftRight 0.2s ease-in;
+  overflow: hidden;
+  box-shadow: 10px;
+}
+.SideContent {
+  padding: 24vh 10%;
+}
+.SideTitle {
+}
+.SideText {
+  padding: 5vh 0%;
+  font-size: 1.25em;
+}
+.SideFooter {
+}
+@keyframes leftRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+@media (orientation: portrait) {
+  .SideBar {
+    flex-basis: 100vw;
+  }
+}
