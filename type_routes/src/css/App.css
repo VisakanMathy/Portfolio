@@ -34,8 +34,11 @@ body {
 .PageSection {
   flex-basis: 64vw;
   overflow-y: scroll;
-  height: 100vh;
-  padding: 0 3vw;
+  height: 94vh;
+  padding: 6vh 3vw 0;
+}
+.Title {
+  font-size: 2.5em;
 }
 @media (orientation: portrait) {
   .PageSection {

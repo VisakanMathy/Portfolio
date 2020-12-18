@@ -1,3 +1,4 @@
-.ContactPage {
-  width: 100vw;
+.ContactPage .Title {
+  margin-top: 18vh;
+  margin-bottom: 6vh;
 }
