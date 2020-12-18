@@ -18,10 +18,14 @@
   font-size: 1.15em;
   margin: 0.25em;
 }
-.NavButtonGroup button.blurred {
-  color: -internal-light-dark(rgba(16, 16, 16, 0.3), white);
+.NavButtonGroup button:hover,
+.NavButtonGroup button.blurred:hover {
+  color: black;
 }
-.NavButtonGroup button:hover:not([disabled]):after {
+.NavButtonGroup button.blurred {
+  color: rgba(16, 16, 16, 0.3);
+}
+.NavButtonGroup button:hover:after {
   content: "";
   display: block;
   width: 50%;
@@ -37,9 +41,11 @@
   from {
     width: 0%;
     margin: 5px 50% 0;
+    color: unset;
   }
   to {
     width: 50%;
     margin: 5px 25% 0;
+    color: black;
   }
 }
